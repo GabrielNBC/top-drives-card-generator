@@ -32,6 +32,14 @@ export type FormsData = {
 	rq: number | string;
 	tyres: string;
 	fuses: string;
+	abs?: boolean;
+	tc?: boolean;
+	clearance?: number;
+	weight?: number | string;
+	engineTuning?: number | string;
+	weightTuning?: number | string;
+	chassisTuning?: number | string;
+	theme: "classic" | "td";
 };
 
 const defaultFormData: FormsData = {
@@ -54,6 +62,14 @@ const defaultFormData: FormsData = {
 	rq: "99",
 	tyres: "Performance",
 	fuses: "0",
+	abs: true,
+	tc: true,
+	clearance: 2,
+	weight: 1200,
+	engineTuning: 3,
+	weightTuning: 2,
+	chassisTuning: 1,
+	theme: "classic",
 };
 
 const App = () => {

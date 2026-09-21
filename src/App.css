@@ -58,3 +58,35 @@ body {
 .theme-common {
     --rq-color: #828282;
 }
+
+/* TD theme integration */
+.theme-td .card-top {
+    background-color: rgba(18, 15, 10, 0.73);
+}
+.theme-td .card-top .left {
+    background: #544e49;
+}
+.theme-td .card-top .middle {
+    background: linear-gradient(90deg, rgba(0,0,0,0.72), rgba(60,60,60,0.65));
+}
+.theme-td .card-top .right .year-bg {
+    background: linear-gradient(90deg, rgba(0,0,0,0.6), rgba(143,143,143,0.45));
+}
+.theme-td .card-top .right .country-bg {
+    background: #6b6052;
+}
+.theme-td .card-content {
+    background: transparent;
+}
+.theme-td .card-content .right-side .box .values {
+    background: linear-gradient(90deg, rgba(0,0,0,0.2), rgba(229,222,208,0.5));
+}
+.theme-td .card-content .left-side .bottom {
+    background: rgba(80,74,70,1);
+}
+.theme-td .card-content .stars .star {
+    color: var(--rq-color);
+}
+.theme-td .card-content .wrench svg {
+    opacity: 0.45;
+}
