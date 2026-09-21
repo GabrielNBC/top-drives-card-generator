@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="153"
+   height="103"
+   viewBox="0 0 1713.6 1153.6"
+   fill="none"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="Flag_of_Malaysia.svg"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs5" />
+  <sodipodi:namedview
+     id="namedview5"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.52166666"
+     inkscape:cx="-323.96167"
+     inkscape:cy="362.30032"
+     inkscape:window-width="1366"
+     inkscape:window-height="675"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5" />
+  <title
+     id="title1">Flag of Malaysia</title>
+  <g
+     transform="scale(61.2,82.4)"
+     id="g4">
+    <path
+       fill="#ffffff"
+       d="M 0,0 H 28 V 14 H 0 Z"
+       id="path1" />
+    <path
+       stroke="#cc0000"
+       d="m 1,0.5 h 27 m 0,2 H 1 m 0,2 h 27 m 0,2 H 1"
+       id="path2" />
+    <path
+       fill="#000066"
+       d="M 0,0 H 14 V 8.5 H 0 Z"
+       id="path3" />
+    <path
+       stroke="#cc0000"
+       d="m 0,8.5 h 28 m 0,2 H 0 m 0,2 h 28"
+       id="path4" />
+  </g>
+  <path
+     fill="#ffcc00"
+     d="m 559.40039,123.6 16.19535,125.66 62.66233,-105.23167 -33.60154,121.19667 96.71796,-64.03167 -76.5873,92.7 111.70242,-10.12833 -104.43723,45.835 104.43723,45.835 -111.70242,-10.12833 76.5873,92.7 L 604.65653,393.975 638.25807,515.17167 575.59574,409.94 559.40039,535.6 543.20506,409.94 480.54272,515.17167 514.14427,393.975 l -96.71795,64.03167 76.5873,-92.7 L 382.31119,375.435 486.74841,329.6 382.31119,283.765 l 111.70243,10.12833 -76.5873,-92.7 L 514.14427,265.225 480.54272,144.02833 543.20506,249.26 Z m -90.81498,5.15 a 193.73862,219.73333 0 1 0 0,401.7 217.95595,247.2 0 1 1 0,-401.7 z"
+     id="path5"
+     style="stroke-width:0.161193" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Flag of Malaysia</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

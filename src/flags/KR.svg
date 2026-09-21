@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="153"
+   height="103"
+   viewBox="-72 -48 24.48 16.48"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="Flag_of_South_Korea.svg"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs5" />
+  <sodipodi:namedview
+     id="namedview5"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.3"
+     inkscape:cx="526.66667"
+     inkscape:cy="210"
+     inkscape:window-width="1280"
+     inkscape:window-height="627"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5" />
+  <path
+     fill="#ffffff"
+     d="m -72,-48 v 16.48 h 24.48 V -48 Z"
+     id="path1"
+     style="stroke-width:0.170831" />
+  <g
+     stroke="#000000"
+     stroke-width="4"
+     id="g3"
+     transform="matrix(0.17,0,0,0.17166667,-59.76,-39.76)">
+    <path
+       transform="rotate(33.690068)"
+       d="m -50,-12 v 24 m 6,0 v -24 m 6,0 v 24 m 76,0 V 1 m 0,-2 v -11 m 6,0 v 11 m 0,2 v 11 m 6,0 V 1 m 0,-2 v -11"
+       id="path2" />
+    <path
+       transform="rotate(-33.690068)"
+       d="m -50,-12 v 24 m 6,0 V 1 m 0,-2 v -11 m 6,0 v 24 m 76,0 V 1 m 0,-2 v -11 m 6,0 v 24 m 6,0 V 1 m 0,-2 v -11"
+       id="path3" />
+  </g>
+  <g
+     transform="matrix(0.14144855,0.09522353,-0.09429903,0.1428353,-59.76,-39.76)"
+     id="g5">
+    <path
+       fill="#cd2e3a"
+       d="M 12,0 A 18,18 0 1 1 -24,0 24,24 0 1 1 24,0"
+       id="path4" />
+    <path
+       fill="#0047a0"
+       d="M -24,0 A 24,24 0 1 0 24,0 12,12 0 1 0 0,0 12,12 0 1 1 -24,0"
+       id="path5" />
+  </g>
+</svg>
