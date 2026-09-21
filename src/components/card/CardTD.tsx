@@ -3,7 +3,7 @@ import type { FormsData } from "../../App";
 import { getRqSymbol, valueToNumber } from "../../utils/utils";
 import "./CardTD.css";
 
-const fallbackFlag = new URL("../../flags/GB.svg", import.meta.url).href;
+const fallbackFlag = "https://flagcdn.com/gb.svg";
 
 const getRqColor = (rq: number) => {
     if (rq >= 80) return "#febc10";
@@ -36,12 +36,7 @@ const TD_TRAP_PATH = "M 343.24769,794.5172 C 331.81136,747.18987 320.61573,699.8
 const getFlagAsset = (countryCode: string) => {
     const code = (countryCode || "GB").toUpperCase();
     const normalized = code === "UK" ? "GB" : code;
-
-    try {
-        return new URL(`../../flags/${normalized}.svg`, import.meta.url).href;
-    } catch {
-        return fallbackFlag;
-    }
+    return `https://flagcdn.com/${normalized.toLowerCase()}.svg`;
 };
 
 const renderAbsTcs = (absOn: boolean, tcOn: boolean) => (
@@ -102,7 +97,16 @@ const CardTD = ({ formData }: { formData: FormsData }) => {
             <div className="td-header">
                 <div className="td-header__bg" style={{ background: "linear-gradient(90deg, rgba(0,0,0,0.72), rgba(60,60,60,0.65))" }} />
                 <div className="td-flag" aria-label={country}>
-                    <img src={getFlagAsset(country)} alt={country} />
+                    <img
+                        src={getFlagAsset(country)}
+                        alt={country}
+                        onError={(event) => {
+                            const target = event.currentTarget as HTMLImageElement;
+                            if (target.src !== fallbackFlag) {
+                                target.src = fallbackFlag;
+                            }
+                        }}
+                    />
                 </div>
                 <div className="td-logo">
                     {formData.logo ? <img src={formData.logo} alt="Manufacturer logo" /> : null}
