@@ -115,6 +115,18 @@ const FormContent = ({ formData, handleImageChange, handleLogoChange, updateFiel
 						{fitImageButtonText}
 					</Button>
 				</Grid.Col>
+				<Grid.Col span={4}>
+					<Select
+						label="Card Theme"
+						data={[
+							{ value: "classic", label: "Classic" },
+							{ value: "td", label: "Top Drives" },
+						]}
+						value={formData.theme}
+						disabled={exporting}
+						onChange={(val) => updateField("theme", (val === "td" ? "td" : "classic"))}
+					/>
+				</Grid.Col>
 			</Grid>
 
 			<Divider label="Car Info" labelPosition="center" mt={"1rem"} />
@@ -249,6 +261,86 @@ const FormContent = ({ formData, handleImageChange, handleLogoChange, updateFiel
 					/>
 				</Grid.Col>
 			</Grid>
+
+			{formData.theme === "td" && (
+				<>
+					<Divider label="Top Drives Options" labelPosition="center" mt="1rem" />
+					<Grid>
+						<Grid.Col span={3}>
+							<Select
+								label="ABS"
+								data={[
+									{ value: "true", label: "Enabled" },
+									{ value: "false", label: "Disabled" },
+								]}
+								value={formData.abs ? "true" : "false"}
+								disabled={exporting}
+								onChange={(val) => updateField("abs", val === "true")}
+							/>
+						</Grid.Col>
+						<Grid.Col span={3}>
+							<Select
+								label="TCS"
+								data={[
+									{ value: "true", label: "Enabled" },
+									{ value: "false", label: "Disabled" },
+								]}
+								value={formData.tc ? "true" : "false"}
+								disabled={exporting}
+								onChange={(val) => updateField("tc", val === "true")}
+							/>
+						</Grid.Col>
+						<Grid.Col span={3}>
+							<Select
+								label="Clearance"
+								data={[
+									{ value: "1", label: "LOW" },
+									{ value: "2", label: "MID" },
+									{ value: "3", label: "HIGH" },
+								]}
+								value={String(formData.clearance ?? 2)}
+								disabled={exporting}
+								onChange={(val) => updateField("clearance", Number(val) ?? 2)}
+							/>
+						</Grid.Col>
+						<Grid.Col span={3}>
+							<NumberInput
+								label="Weight (kg)"
+								value={formData.weight}
+								disabled={exporting}
+								onChange={(val) => updateField("weight", Number(val) ?? 0)}
+							/>
+						</Grid.Col>
+					</Grid>
+
+					<Grid>
+						<Grid.Col span={4}>
+							<NumberInput
+								label="Engine tuning"
+								value={formData.engineTuning}
+								disabled={exporting}
+								onChange={(val) => updateField("engineTuning", Number(val) ?? 0)}
+							/>
+						</Grid.Col>
+						<Grid.Col span={4}>
+							<NumberInput
+								label="Weight tuning"
+								value={formData.weightTuning}
+								disabled={exporting}
+								onChange={(val) => updateField("weightTuning", Number(val) ?? 0)}
+							/>
+						</Grid.Col>
+						<Grid.Col span={4}>
+							<NumberInput
+								label="Chassis tuning"
+								value={formData.chassisTuning}
+								disabled={exporting}
+								onChange={(val) => updateField("chassisTuning", Number(val) ?? 0)}
+							/>
+						</Grid.Col>
+					</Grid>
+				</>
+			)}
         </>
     )
 }
