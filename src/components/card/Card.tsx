@@ -1,5 +1,6 @@
 import { CARD_HEIGHT, CARD_WIDTH, type FormsData } from "../../App";
 import CardContent from "./CardContent";
+import CardTD from "./CardTD";
 import CardTop from "./CardTop";
 import "./Card.css";
 
@@ -13,11 +14,12 @@ interface CardI {
 const Card = ({ formData, cardRef, scale, exporting }: CardI) => {
     const scaledWidth = CARD_WIDTH * scale;
     const scaledHeight = CARD_HEIGHT * scale;
+    const themeClass = formData.theme === "td" ? "theme-td" : "theme-classic";
 
     return (
         <div className="card-container" ref={cardRef} style={{ width: scaledWidth, height: scaledHeight, transform: `scale(${scale})` }}>
             <div
-                className="card"
+                className={`card ${themeClass}`}
                 style={{
                     width: CARD_WIDTH,
 					height: CARD_HEIGHT,
@@ -27,8 +29,14 @@ const Card = ({ formData, cardRef, scale, exporting }: CardI) => {
 					backgroundPosition: `${formData.bgX}% ${formData.bgY}%`
                 }}
             >
-				<CardTop formData={formData} exporting={Boolean(exporting)} />
-				<CardContent formData={formData} exporting={Boolean(exporting)} />
+                {formData.theme === "td" ? (
+                    <CardTD formData={formData} />
+                ) : (
+                    <>
+                        <CardTop formData={formData} exporting={Boolean(exporting)} />
+                        <CardContent formData={formData} exporting={Boolean(exporting)} />
+                    </>
+                )}
 			</div>
         </div>
     )
